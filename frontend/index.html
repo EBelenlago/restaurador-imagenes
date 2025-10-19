@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Restaurador de Imágenes</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>🖼️ Restaurador de Imágenes</h1>
+
+    <form id="form-restaurar">
+      <label for="file" class="file-label">Seleccionar imagen</label>
+      <input type="file" id="file" name="file" accept="image/*" required hidden />
+      <button type="submit" class="btn">✨ Restaurar</button>
+    </form>
+
+    <section class="grid">
+      <div class="card">
+        <h3>Original</h3>
+        <img id="preview" alt="Preview" />
+      </div>
+      <div class="card">
+        <h3>Restaurada</h3>
+        <img id="resultado" alt="Resultado" />
+        <a id="download" download="restaurada.jpeg" class="btn download" style="display:none;">⬇️ Descargar</a>
+      </div>
+    </section>
+
+    <p id="estado" class="estado"></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
