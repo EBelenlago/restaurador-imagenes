@@ -1,1 +1,1 @@
-# restaurador-imagenes
+# restaurador-imagenes con filtros
