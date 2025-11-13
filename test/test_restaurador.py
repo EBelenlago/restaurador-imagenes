@@ -26,3 +26,4 @@ print("Imagen restaurada guardada en data/data-output/restaurada.jpeg")
 
 # Restauración completa en un solo paso
 final = rest.restaurar_completo("data/data-output/restaurada.jpeg")
+
