@@ -12,6 +12,39 @@
     <form id="form-restaurar">
       <label for="file" class="file-label">Seleccionar imagen</label>
       <input type="file" id="file" name="file" accept="image/*" required hidden />
+
+      <label for="modo">Modo de restauración</label>
+      <select id="modo" name="modo">
+        <option value="rapido">Rápido</option>
+        <option value="avanzado">Avanzado</option>
+      </select>
+
+      <fieldset class="filtros" style="display:none;">
+        <legend>🎛️ Filtros personalizados</legend>
+
+        <div class="filtro">
+          <label><input type="checkbox" name="manchas" checked /> Reparar manchas</label>
+          <input type="range" name="intensidad_manchas" min="0" max="2" step="0.1" value="1" />
+        </div>
+
+        <div class="filtro">
+          <label><input type="checkbox" name="ruido" checked /> Reducir ruido</label>
+          <input type="range" name="intensidad_ruido" min="0" max="2" step="0.1" value="1" />
+        </div>
+
+        <div class="filtro">
+          <label><input type="checkbox" name="contraste" checked /> Mejorar contraste</label>
+          <input type="range" name="intensidad_contraste" min="0" max="2" step="0.1" value="1" />
+        </div>
+
+        <div class="filtro">
+          <label><input type="checkbox" name="enfoque" checked /> Enfocar</label>
+          <input type="range" name="intensidad_enfoque" min="0" max="2" step="0.1" value="1.2" />
+        </div>
+        
+      </fieldset>
+
+
       <button type="submit" class="btn">✨ Restaurar</button>
     </form>
 
